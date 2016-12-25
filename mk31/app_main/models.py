@@ -40,11 +40,11 @@ class Images(models.Model):
     fol = "images"
     #fol = CategoryFurniture._meta.get_field('folder_name')
     imagepath = models.ImageField(upload_to=fol, verbose_name='Изображение')
-    initpath = imagepath.path
-    imagepath.name = 'images/123.jpg'
-    new_path = settings.MEDIA_ROOT + imagepath.name
-    os.rename(initpath, new_path)
-    imagepath.path = new_path
+    #initpath = imagepath.path
+    #imagepath.name = 'images/123.jpg'
+    #new_path = settings.MEDIA_ROOT + imagepath.name
+    #os.rename(initpath, new_path)
+    #imagepath.path = new_path
     
     class Meta:
         verbose_name = 'Изображение'
